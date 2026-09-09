@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Adapting the page for mobile devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Prohibition of phone number recognition -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Page title -->
+		<title>Заголовок страницы</title>
+
+		<!-- Meta description -->
+		<meta name="description" content="">
+
+		<!-- Meta Keywords -->
+		<meta name="keywords" content="">
+
+		<!-- Changing the color of the mobile browser panel -->
+		<meta name="msapplication-TileColor" content="#E48837">
+		<meta name="theme-color" content="#E48837">
+
+		<!-- Connecting style files -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/ion.rangeSlider.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/fonts.css">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="cont">
+						<div class="data">
+							<a href="/" class="logo">
+								<img src="images/logo.png" alt="Свадебные и вечерние платья">
+
+								<span>Свадебные и вечерние платья</span>
+							</a>
+
+							<form action="" class="search">
+								<input type="text" name="" value="" class="input" placeholder="Поиск по каталогу">
+
+								<button type="submit" class="submit_btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+								</button>
+							</form>
+
+							<div class="address">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+
+								<span>Москва, Новоясеневский пр-т, 1<br> м. Теплый стан</span>
+							</div>
+
+							<div class="work_time">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_time"></use></svg>
+
+								<span>Ежедневно с 10:00 до 22:00,<br> примерка по записи</span>
+							</div>
+
+							<div class="phone">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+
+								<a href="tel:8-903-721-61-53">8-903-721-61-53</a>
+							</div>
+						</div>
+
+						<div class="bottom">
+							<nav class="menu">
+								<div class="item">
+									<a href="/">Свадебные платья</a>
+								</div>
+
+								<div class="item">
+									<a class="active">Вечерние платья</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Аксессуары</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Жакеты, Шубки</a>
+								</div>
+							</nav>
+
+							<a href="/" class="favorite_link">
+								<span class="icon">
+									<span class="count">2</span>
+
+									<svg><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+								</span>
+
+								<span>Избранное</span>
+							</a>
+
+							<button class="order_btn">Записаться на примерку</button>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="page_head">
+					<div class="cont">
+						<div class="breadcrumbs">
+							<a href="/">Главная</a>
+
+							<svg class="sep"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+
+							<span class="current">Вечерние платья</span>
+						</div>
+
+						<h1 class="page_title">Вечерние платья</h1>
+					</div>
+				</section>
+
+
+				<section class="content_row block">
+					<div class="cont row">
+						<aside>
+							<div class="filter">
+								<form action="">
+									<div class="item">
+										<div class="name active">
+											<span>Цена</span>
+
+											<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+										</div>
+
+										<div class="data" style="display: block;">
+											<div class="range price_range">
+												<div class="line">
+													<div class="label">Oт</div>
+
+													<div class="field">
+														<input type="text" name="" value="10 000 ₽" class="input from">
+													</div>
+												</div>
+
+												<div class="line">
+													<div class="label">До</div>
+
+													<div class="field">
+														<input type="text" name="" value="35 000 ₽" class="input to">
+													</div>
+												</div>
+
+												<input type="hidden" id="price_range" name="price_range" value="">
+											</div>
+										</div>
+									</div>
+
+									<div class="item">
+										<div class="name active">
+											<span>Размер</span>
+
+											<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+										</div>
+
+										<div class="data" style="display: block;">
+											<div class="field">
+												<label class="checkbox">
+													<input type="checkbox" name="group1" checked>
+
+													<div class="check">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+													</div>
+
+													<div class="text">40</div>
+												</label>
+											</div>
+
+											<div class="field">
+												<label class="checkbox">
+													<input type="checkbox" name="group1">
+
+													<div class="check">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+													</div>
+
+													<div class="text">42</div>
+												</label>
+											</div>
+
+											<div class="field">
+												<label class="checkbox">
+													<input type="checkbox" name="group1">
+
+													<div class="check">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+													</div>
+
+													<div class="text">44</div>
+												</label>
+											</div>
+
+											<div class="field">
+												<label class="checkbox">
+													<input type="checkbox" name="group1">
+
+													<div class="check">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+													</div>
+
+													<div class="text">46</div>
+												</label>
+											</div>
+
+											<div class="field">
+												<label class="checkbox">
+													<input type="checkbox" name="group1">
+
+													<div class="check">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+													</div>
+
+													<div class="text">48</div>
+												</label>
+											</div>
+
+											<div class="field">
+												<label class="checkbox">
+													<input type="checkbox" name="group1">
+
+													<div class="check">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+													</div>
+
+													<div class="text">50</div>
+												</label>
+											</div>
+
+											<div class="field">
+												<label class="checkbox">
+													<input type="checkbox" name="group1">
+
+													<div class="check">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+													</div>
+
+													<div class="text">52</div>
+												</label>
+											</div>
+
+											<div class="field">
+												<label class="checkbox">
+													<input type="checkbox" name="group1">
+
+													<div class="check">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+													</div>
+
+													<div class="text">54</div>
+												</label>
+											</div>
+
+											<div class="field hidden">
+												<label class="checkbox">
+													<input type="checkbox" name="group1">
+
+													<div class="check">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+													</div>
+
+													<div class="text">56</div>
+												</label>
+											</div>
+
+											<div class="field hidden">
+												<label class="checkbox">
+													<input type="checkbox" name="group1">
+
+													<div class="check">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+													</div>
+
+													<div class="text">58</div>
+												</label>
+											</div>
+
+											<button class="spoler_btn">
+												<span>Показать всё</span>
+												<span>Свернуть</span>
+											</button>
+										</div>
+									</div>
+
+									<div class="item">
+										<div class="name active">
+											<span>Цвет</span>
+
+											<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+										</div>
+
+										<div class="data" style="display: block;">
+											<div class="field">
+												<label class="checkbox">
+													<input type="checkbox" name="group2" checked>
+
+													<div class="check">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+													</div>
+
+													<picture class="color">
+														<img src="images/tmp/filter_product_color1.jpg" alt="" loading="lazy" class="cover">
+													</picture>
+
+													<div class="text">Черный</div>
+												</label>
+											</div>
+
+											<div class="field">
+												<label class="checkbox">
+													<input type="checkbox" name="group2">
+
+													<div class="check">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+													</div>
+
+													<picture class="color">
+														<img src="images/tmp/filter_product_color2.jpg" alt="" loading="lazy" class="cover">
+													</picture>
+
+													<div class="text">Бежевый</div>
+												</label>
+											</div>
+
+											<div class="field">
+												<label class="checkbox">
+													<input type="checkbox" name="group2">
+
+													<div class="check">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+													</div>
+
+													<picture class="color">
+														<img src="images/tmp/filter_product_color3.jpg" alt="" loading="lazy" class="cover">
+													</picture>
+
+													<div class="text">Белый</div>
+												</label>
+											</div>
+
+											<div class="field">
+												<label class="checkbox">
+													<input type="checkbox" name="group2">
+
+													<div class="check">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+													</div>
+
+													<picture class="color">
+														<img src="images/tmp/filter_product_color4.jpg" alt="" loading="lazy" class="cover">
+													</picture>
+
+													<div class="text">Красный</div>
+												</label>
+											</div>
+
+											<div class="field">
+												<label class="checkbox">
+													<input type="checkbox" name="group2">
+
+													<div class="check">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+													</div>
+
+													<picture class="color">
+														<img src="images/tmp/filter_product_color5.jpg" alt="" loading="lazy" class="cover">
+													</picture>
+
+													<div class="text">Синий</div>
+												</label>
+											</div>
+
+											<div class="field">
+												<label class="checkbox">
+													<input type="checkbox" name="group2">
+
+													<div class="check">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+													</div>
+
+													<picture class="color">
+														<img src="images/tmp/filter_product_color6.jpg" alt="" loading="lazy" class="cover">
+													</picture>
+
+													<div class="text">Зеленый</div>
+												</label>
+											</div>
+
+											<div class="field">
+												<label class="checkbox">
+													<input type="checkbox" name="group2">
+
+													<div class="check">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+													</div>
+
+													<picture class="color">
+														<img src="images/tmp/filter_product_color7.jpg" alt="" loading="lazy" class="cover">
+													</picture>
+
+													<div class="text">Розовый</div>
+												</label>
+											</div>
+
+											<div class="field">
+												<label class="checkbox">
+													<input type="checkbox" name="group2">
+
+													<div class="check">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+													</div>
+
+													<picture class="color">
+														<img src="images/tmp/filter_product_color8.jpg" alt="" loading="lazy" class="cover">
+													</picture>
+
+													<div class="text">Серебристый</div>
+												</label>
+											</div>
+
+											<div class="field hidden">
+												<label class="checkbox">
+													<input type="checkbox" name="group2">
+
+													<div class="check">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+													</div>
+
+													<picture class="color">
+														<img src="images/tmp/filter_product_color8.jpg" alt="" loading="lazy" class="cover">
+													</picture>
+
+													<div class="text">Серебристый</div>
+												</label>
+											</div>
+
+											<div class="field hidden">
+												<label class="checkbox">
+													<input type="checkbox" name="group2">
+
+													<div class="check">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+													</div>
+
+													<picture class="color">
+														<img src="images/tmp/filter_product_color8.jpg" alt="" loading="lazy" class="cover">
+													</picture>
+
+													<div class="text">Серебристый</div>
+												</label>
+											</div>
+
+											<button class="spoler_btn">
+												<span>Показать всё</span>
+												<span>Свернуть</span>
+											</button>
+										</div>
+									</div>
+
+									<div class="submit">
+										<button type="submit" class="submit_btn">Применить</button>
+
+										<button type="reset" class="reset_btn">Сбросить фильтры</button>
+									</div>
+								</form>
+							</div>
+						</aside>
+
+						<section class="content">
+							<section class="products">
+								<div class="head">
+									<div class="sort">
+										<div class="label">Сортировать по:</div>
+
+										<div class="field">
+											<select name="" data-placeholder=" ">
+												<option value="1" selected>Цене (сначала дешевле)</option>
+												<option value="2">Цене (сначала дешевле)</option>
+												<option value="3">Цене (сначала дешевле)</option>
+											</select>
+
+											<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+										</div>
+									</div>
+
+									<div class="filter_selected show">
+										<div class="label">Вы выбрали:</div>
+
+										<button class="btn">
+											<span>Размер: 40</span>
+
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_remove"></use></svg>
+										</button>
+
+										<button class="btn">
+											<span>Длина платья: 2 знач.</span>
+
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_remove"></use></svg>
+										</button>
+
+										<button class="clear_all_btn">Очистить все</button>
+									</div>
+								</div>
+
+
+								<div class="grid_row">
+									<div class="product">
+										<div class="stickers">
+											<div class="sticker primary">Новинка</div>
+										</div>
+
+										<button class="favorite_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite_small"></use></svg>
+
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite_small_fill"></use></svg>
+										</button>
+
+										<a href="/" class="images">
+											<div class="swiper">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+												</div>
+
+												<div class="swiper-pagination"></div>
+											</div>
+										</a>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Вечерний костюм 1114</a>
+											</div>
+
+											<div class="sizes">
+												<div class="label">Доступные размеры:</div>
+
+												<div class="vals">
+													<div>40</div>
+													<div>44</div>
+													<div>46</div>
+													<div>48</div>
+												</div>
+											</div>
+
+											<div class="price">
+												<span class="current">35800 ₽</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="product">
+										<div class="stickers">
+											<div class="sticker dark">-20%</div>
+										</div>
+
+										<button class="favorite_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite_small"></use></svg>
+
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite_small_fill"></use></svg>
+										</button>
+
+										<a href="/" class="images">
+											<div class="swiper">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+												</div>
+
+												<div class="swiper-pagination"></div>
+											</div>
+										</a>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Вечерний костюм 1114</a>
+											</div>
+
+											<div class="sizes">
+												<div class="label">Доступные размеры:</div>
+
+												<div class="vals">
+													<div>40</div>
+													<div>44</div>
+													<div>46</div>
+													<div>48</div>
+												</div>
+											</div>
+
+											<div class="price">
+												<span class="new">35800 ₽</span>
+												<span class="old">45800 ₽</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="product">
+										<button class="favorite_btn active">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite_small"></use></svg>
+
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite_small_fill"></use></svg>
+										</button>
+
+										<a href="/" class="images">
+											<div class="swiper">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+												</div>
+
+												<div class="swiper-pagination"></div>
+											</div>
+										</a>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Вечерний костюм 111олио лотолрол4</a>
+											</div>
+
+											<div class="sizes">
+												<div class="label">Доступные размеры:</div>
+
+												<div class="vals">
+													<div>40</div>
+													<div>44</div>
+													<div>46</div>
+													<div>48</div>
+												</div>
+											</div>
+
+											<div class="price">
+												<span class="current">35800 ₽</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="product">
+										<div class="stickers">
+											<div class="sticker outline">Новинка</div>
+										</div>
+
+										<button class="favorite_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite_small"></use></svg>
+
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite_small_fill"></use></svg>
+										</button>
+
+										<a href="/" class="images">
+											<div class="swiper">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+												</div>
+
+												<div class="swiper-pagination"></div>
+											</div>
+										</a>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Вечерний костюм 1114</a>
+											</div>
+
+											<div class="sizes">
+												<div class="label">Доступные размеры:</div>
+
+												<div class="vals">
+													<div>40</div>
+													<div>44</div>
+													<div>46</div>
+													<div>48</div>
+												</div>
+											</div>
+
+											<div class="price">
+												<span class="current">35800 ₽</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="product">
+										<div class="stickers">
+											<div class="sticker primary">-20%</div>
+										</div>
+
+										<button class="favorite_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite_small"></use></svg>
+
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite_small_fill"></use></svg>
+										</button>
+
+										<a href="/" class="images">
+											<div class="swiper">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+												</div>
+
+												<div class="swiper-pagination"></div>
+											</div>
+										</a>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Вечерний костюм 1114</a>
+											</div>
+
+											<div class="sizes">
+												<div class="label">Доступные размеры:</div>
+
+												<div class="vals">
+													<div>40</div>
+													<div>44</div>
+													<div>46</div>
+													<div>48</div>
+												</div>
+											</div>
+
+											<div class="price">
+												<span class="new">35800 ₽</span>
+												<span class="old">45800 ₽</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="product">
+										<button class="favorite_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite_small"></use></svg>
+
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite_small_fill"></use></svg>
+										</button>
+
+										<a href="/" class="images">
+											<div class="swiper">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+
+													<div class="swiper-slide">
+														<picture class="thumb">
+															<img src="images/tmp/product_thumb.jpg" alt="" loading="lazy" class="cover">
+														</picture>
+													</div>
+												</div>
+
+												<div class="swiper-pagination"></div>
+											</div>
+										</a>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Вечерний костюм 1114</a>
+											</div>
+
+											<div class="sizes">
+												<div class="label">Доступные размеры:</div>
+
+												<div class="vals">
+													<div>40</div>
+													<div>44</div>
+													<div>46</div>
+													<div>48</div>
+												</div>
+											</div>
+
+											<div class="price">
+												<span class="current">35800 ₽</span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="pagination">
+									<a href="/" class="prev">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									</a>
+
+									<a class="active">1</a>
+
+									<a href="/">2</a>
+
+									<a href="/">3</a>
+
+									<a href="/">4</a>
+
+									<div class="sep">...</div>
+
+									<a href="/">12</a>
+
+									<a href="/" class="next">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									</a>
+								</div>
+							</section>
+						</section>
+					</div>
+				</section>
+
+
+				<section class="products_small block">
+					<div class="cont">
+						<div class="block_head">
+							<div class="title">Вы ранее смотрели</div>
+						</div>
+
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="/" class="product">
+										<button class="favorite_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite_small"></use></svg>
+
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite_small_fill"></use></svg>
+										</button>
+
+										<picture class="thumb">
+											<img src="images/tmp/products_small_thumb.png" alt="" loading="lazy" class="cover">
+										</picture>
+
+										<div class="name">Туфли классические 8812</div>
+
+										<div class="price">12 500 ₽</div>
+									</a>
+								</div>
+
+								<div class="swiper-slide">
+									<a href="/" class="product">
+										<button class="favorite_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite_small"></use></svg>
+
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite_small_fill"></use></svg>
+										</button>
+
+										<picture class="thumb">
+											<img src="images/tmp/products_small_thumb.png" alt="" loading="lazy" class="cover">
+										</picture>
+
+										<div class="name">Туфли классические 8812</div>
+
+										<div class="price">12 500 ₽</div>
+									</a>
+								</div>
+
+								<div class="swiper-slide">
+									<a href="/" class="product">
+										<button class="favorite_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite_small"></use></svg>
+
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite_small_fill"></use></svg>
+										</button>
+
+										<picture class="thumb">
+											<img src="images/tmp/products_small_thumb.png" alt="" loading="lazy" class="cover">
+										</picture>
+
+										<div class="name">Туфли классические 8812</div>
+
+										<div class="price">12 500 ₽</div>
+									</a>
+								</div>
+
+								<div class="swiper-slide">
+									<a href="/" class="product">
+										<button class="favorite_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite_small"></use></svg>
+
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite_small_fill"></use></svg>
+										</button>
+
+										<picture class="thumb">
+											<img src="images/tmp/products_small_thumb.png" alt="" loading="lazy" class="cover">
+										</picture>
+
+										<div class="name">Туфли классические 8812</div>
+
+										<div class="price">12 500 ₽</div>
+									</a>
+								</div>
+							</div>
+
+							<button class="swiper-button-prev">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+							</button>
+
+							<button class="swiper-button-next">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+							</button>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+
+		<!-- Connecting javascript files -->
+		<script src="js/jquery-3.7.1.min.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/nice-select2.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
