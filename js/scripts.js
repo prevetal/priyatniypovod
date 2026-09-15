@@ -43,7 +43,39 @@ document.addEventListener('DOMContentLoaded', function() {
 			slidesPerView: getCssVar(el, '--slidesPerView'),
 		}
 
-		productThumbsSliders.push(new Swiper('.product_thumbs_s' + i, options))
+		const swiperInstance = new Swiper('.product_thumbs_s' + i, options)
+		productThumbsSliders.push(swiperInstance)
+
+		// Hover
+		const slidesCount = el.querySelectorAll('.swiper-slide').length
+
+		if (slidesCount > 1) {
+			const nav = document.createElement('div')
+			nav.className = 'hover-nav'
+
+			for (let j = 0; j < slidesCount; j++) {
+				const cell = document.createElement('span')
+
+				cell.dataset.index = j
+
+				nav.appendChild(cell)
+			}
+
+			el.appendChild(nav)
+
+			nav.addEventListener('mouseover', (e) => {
+				const cell = e.target.closest('span')
+				if (!cell) return
+
+				swiperInstance.slideToLoop(+cell.dataset.index, 500)
+			})
+
+			const product = el.closest('.product')
+
+			product.addEventListener('mouseleave', () => {
+				swiperInstance.slideToLoop(0, 0)
+			})
+		}
 	})
 
 
@@ -228,6 +260,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		onChange: data => {
 			$('.filter .price_range input.from').val(data.from.toLocaleString('ru-RU') + ' ₽')
             $('.filter .price_range input.to').val(data.to.toLocaleString('ru-RU') + ' ₽')
+
+			$('.filter .submit_btn').prop('disabled', false)
 		},
 	}).data('ionRangeSlider')
 
@@ -236,6 +270,11 @@ document.addEventListener('DOMContentLoaded', function() {
 			from: parseInt($('.filter .price_range .input.from').val().replace(/\s|₽/g, '')),
 			to: parseInt($('.filter .price_range .input.to').val().replace(/\s|₽/g, '')),
 		})
+	})
+
+
+	$('.filter .checkbox input').change(function() {
+		$('.filter .submit_btn').prop('disabled', false)
 	})
 
 
