@@ -2009,9 +2009,9 @@ aside
         position: sticky;
         top: var(--inner_gap_s);
 
-        width: 420px;
+        width: 640px;
         max-width: 100%;
-        padding-left: 82px;
+        padding-left: 90px;
 
 
         .thumbs
@@ -2020,7 +2020,7 @@ aside
             top: 0;
             left: 0;
 
-            width: 71px;
+            width: 82px;
             height: 100%;
 
 
@@ -2238,7 +2238,7 @@ aside
         display: flex;
         flex-direction: column;
 
-        width: calc(100% - 470px);
+        width: calc(100% - 690px);
 
 
         .title
