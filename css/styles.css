@@ -1482,23 +1482,45 @@ aside
     {
         overflow: visible;
 
-        --slidesPerView: auto;
+        --slidesPerView: 9;
         --spaceBetween: 14px;
-        --slideWidth: 146px;
 
 
         &:not(.swiper-initialized)
         {
             .swiper-wrapper
             {
-                gap: var(--spaceBetween-1280);
+                gap: var(--spaceBetween);
+            }
+
+
+            .swiper-slide
+            {
+                width: calc(100% / var(--slidesPerView) - var(--spaceBetween));
             }
         }
 
 
         .swiper-slide
         {
+            visibility: hidden;
+
             width: var(--slideWidth);
+
+            transition: opacity .2s linear, visibility .2s linear;
+            pointer-events: none;
+
+            opacity: 0;
+
+
+            &.visible
+            {
+                visibility: visible;
+
+                pointer-events: auto;
+
+                opacity: 1;
+            }
         }
     }
 

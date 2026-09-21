@@ -88,7 +88,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		let options = {
 			loop: false,
-			// loopAdditionalSlides: 1,
 			speed: 500,
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
@@ -100,6 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			},
 			spaceBetween: getCssVar(el, '--spaceBetween'),
 			slidesPerView: getCssVar(el, '--slidesPerView'),
+			slidesPerGroup: getCssVar(el, '--slidesPerView'),
 			on: {
 				init: swiper => {
 					setTimeout(() => {
