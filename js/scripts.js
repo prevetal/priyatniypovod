@@ -97,9 +97,33 @@ document.addEventListener('DOMContentLoaded', function() {
 				nextEl: el.querySelector('.swiper-button-next'),
 				prevEl: el.querySelector('.swiper-button-prev')
 			},
-			spaceBetween: getCssVar(el, '--spaceBetween'),
-			slidesPerView: getCssVar(el, '--slidesPerView'),
-			slidesPerGroup: getCssVar(el, '--slidesPerView'),
+			breakpoints: {
+				0: {
+					spaceBetween: getCssVar(el, '--spaceBetween-0'),
+					slidesPerView: getCssVar(el, '--slidesPerView-0'),
+					slidesPerGroup: 1,
+				},
+				768: {
+					spaceBetween: getCssVar(el, '--spaceBetween-768'),
+					slidesPerView: getCssVar(el, '--slidesPerView-768'),
+					slidesPerGroup: getCssVar(el, '--slidesPerView-768'),
+				},
+				1024: {
+					spaceBetween: getCssVar(el, '--spaceBetween-1024'),
+					slidesPerView: getCssVar(el, '--slidesPerView-1024'),
+					slidesPerGroup: getCssVar(el, '--slidesPerView-1024'),
+				},
+				1280: {
+					spaceBetween: getCssVar(el, '--spaceBetween-1280'),
+					slidesPerView: getCssVar(el, '--slidesPerView-1280'),
+					slidesPerGroup: getCssVar(el, '--slidesPerView-1280'),
+				},
+				1440: {
+					spaceBetween: getCssVar(el, '--spaceBetween-1440'),
+					slidesPerView: getCssVar(el, '--slidesPerView-1440'),
+					slidesPerGroup: getCssVar(el, '--slidesPerView-1440'),
+				}
+			},
 			on: {
 				init: swiper => {
 					setTimeout(() => {
@@ -228,6 +252,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 	// Filter
+	$('.filter .mob_filter_btn').click(function(e) {
+		e.preventDefault()
+
+		$(this)
+			.toggleClass('active')
+			.next('form')
+			.toggleClass('show')
+	})
+
+
 	$('.filter .name').click(function(e) {
 		e.preventDefault()
 
@@ -287,5 +321,15 @@ document.addEventListener('DOMContentLoaded', function() {
 		$('.filter_selected').removeClass('show')
 
 		$('.filter form').get(0).reset()
+	})
+
+
+	// Mob. menu
+	$('.mob_header .mob_menu_btn, header .close_btn, .overlay').click((e) => {
+		e.preventDefault()
+
+		$('.mob_header .mob_menu_btn').toggleClass('active')
+		$('body').toggleClass('lock')
+		$('header, .overlay').toggleClass('show')
 	})
 })

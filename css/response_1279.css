@@ -1,0 +1,136 @@
+@media print,
+(max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --sidebar_width: 260px;
+        --font_size_title_l: 56px;
+        --font_size_title: 40px;
+        --font_size_title_s: 20px;
+    }
+
+
+    .content_row,
+    .content_row > .cont.row
+    {
+        .content
+        {
+            width: calc(100% - var(--sidebar_width) - var(--cont_padding));
+        }
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        .work_time
+        {
+            display: none;
+        }
+
+
+        .search
+        {
+            width: calc(100% - 585px);
+        }
+
+
+        .menu
+        {
+            gap: var(--block_padding);
+        }
+
+
+        .favorite_link
+        {
+            .icon
+            {
+                svg
+                {
+                    width: 28px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products
+    {
+        .grid_row
+        {
+            --gap_x: var(--inner_gap_s);
+            --gap_y: var(--inner_gap_s);
+        }
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info
+    {
+        .images
+        {
+            width: 440px;
+            padding-left: 68px;
+
+
+            .thumbs
+            {
+                width: 60px;
+            }
+        }
+
+
+        .data
+        {
+            width: calc(100% - 480px);
+
+
+            .price
+            {
+                .current
+                {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+
+
+
+    /*--------------------
+        Products small
+    --------------------*/
+    .products_small
+    {
+        .swiper
+        {
+            &:not(.swiper-initialized)
+            {
+                .swiper-wrapper
+                {
+                    gap: var(--spaceBetween-1024);
+                }
+
+
+                .swiper-slide
+                {
+                    width: calc(100% / var(--slidesPerView-1024) - var(--spaceBetween-1024));
+                }
+            }
+        }
+    }
+}

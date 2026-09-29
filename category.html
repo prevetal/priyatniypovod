@@ -31,80 +31,105 @@
 		<link rel="stylesheet" href="css/ion.rangeSlider.css">
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/fonts.css">
+
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)">
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
 	</head>
 
 	<body>
 		<div class="wrap">
 			<div class="main">
 				<header>
-					<div class="cont">
-						<div class="data">
-							<a href="/" class="logo">
-								<img src="images/logo.png" alt="Свадебные и вечерние платья">
+					<button class="close_btn"></button>
 
-								<span>Свадебные и вечерние платья</span>
-							</a>
+					<div class="scroll">
+						<div class="cont">
+							<div class="data">
+								<a href="/" class="logo">
+									<img src="images/logo.png" alt="Свадебные и вечерние платья">
 
-							<form action="" class="search">
-								<input type="text" name="" value="" class="input" placeholder="Поиск по каталогу">
+									<span>Свадебные и вечерние платья</span>
+								</a>
 
-								<button type="submit" class="submit_btn">
-									<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
-								</button>
-							</form>
+								<form action="" class="search">
+									<input type="text" name="" value="" class="input" placeholder="Поиск по каталогу">
 
-							<div class="address">
-								<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+									<button type="submit" class="submit_btn">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+									</button>
+								</form>
 
-								<span>Москва, Новоясеневский пр-т, 1<br> м. Теплый стан</span>
+								<div class="address">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+
+									<span>Москва, Новоясеневский пр-т, 1<br> м. Теплый стан</span>
+								</div>
+
+								<div class="work_time">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_time"></use></svg>
+
+									<span>Ежедневно с 10:00 до 22:00,<br> примерка по записи</span>
+								</div>
+
+								<div class="phone">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+
+									<a href="tel:8-903-721-61-53">8-903-721-61-53</a>
+								</div>
 							</div>
 
-							<div class="work_time">
-								<svg class="icon"><use xlink:href="images/sprite.svg#ic_time"></use></svg>
+							<div class="bottom">
+								<nav class="menu">
+									<div class="item">
+										<a href="/">Свадебные платья</a>
+									</div>
 
-								<span>Ежедневно с 10:00 до 22:00,<br> примерка по записи</span>
+									<div class="item">
+										<a class="active">Вечерние платья</a>
+									</div>
+
+									<div class="item">
+										<a href="/">Аксессуары</a>
+									</div>
+
+									<div class="item">
+										<a href="/">Жакеты, Шубки</a>
+									</div>
+								</nav>
+
+								<a href="/" class="favorite_link">
+									<span class="icon">
+										<span class="count">2</span>
+
+										<svg><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+									</span>
+
+									<span>Избранное</span>
+								</a>
+
+								<button class="order_btn">Записаться на примерку</button>
 							</div>
-
-							<div class="phone">
-								<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
-
-								<a href="tel:8-903-721-61-53">8-903-721-61-53</a>
-							</div>
-						</div>
-
-						<div class="bottom">
-							<nav class="menu">
-								<div class="item">
-									<a href="/">Свадебные платья</a>
-								</div>
-
-								<div class="item">
-									<a class="active">Вечерние платья</a>
-								</div>
-
-								<div class="item">
-									<a href="/">Аксессуары</a>
-								</div>
-
-								<div class="item">
-									<a href="/">Жакеты, Шубки</a>
-								</div>
-							</nav>
-
-							<a href="/" class="favorite_link">
-								<span class="icon">
-									<span class="count">2</span>
-
-									<svg><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
-								</span>
-
-								<span>Избранное</span>
-							</a>
-
-							<button class="order_btn">Записаться на примерку</button>
 						</div>
 					</div>
 				</header>
+
+
+				<section class="mob_header">
+					<div class="cont">
+						<a href="/" class="logo">
+							<img src="images/logo.png" alt="Свадебные и вечерние платья">
+
+							<span>Свадебные и вечерние платья</span>
+						</a>
+
+						<button class="mob_menu_btn">
+							<span></span>
+						</button>
+					</div>
+				</section>
 
 
 				<section class="page_head">
@@ -126,6 +151,8 @@
 					<div class="cont row">
 						<aside>
 							<div class="filter">
+								<button class="mob_filter_btn">Фильтры</button>
+
 								<form action="">
 									<div class="item">
 										<div class="name active">
@@ -1054,6 +1081,8 @@
 					</div>
 				</section>
 			</div>
+
+			<div class="overlay"></div>
 		</div>
 
 

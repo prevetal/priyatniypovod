@@ -10,7 +10,7 @@
     --swiper-navigation-top-offset: 0;
     --swiper-navigation-color: #333;
     --swiper-navigation-size: 36px;
-    --swiper-navigation-sides-offset: -25px;
+    --swiper-navigation-sides-offset: calc(var(--cont_padding) * -1);
 
 
     .icon
