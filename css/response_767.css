@@ -239,4 +239,23 @@
             display: none;
         }
     }
+
+
+
+    /*-----------------
+        Sizes table
+    -----------------*/
+    .sizes_table
+    {
+        table
+        {
+            th
+            {
+                br
+                {
+                    display: block;
+                }
+            }
+        }
+    }
 }
