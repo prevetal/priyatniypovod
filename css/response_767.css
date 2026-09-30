@@ -175,6 +175,13 @@
                 {
                     font-size: 24px;
                 }
+
+
+                .discount
+                {
+                    width: 100%;
+                    max-width: 186px;
+                }
             }
 
 

@@ -1671,6 +1671,8 @@ aside
                 justify-content: flex-start;
                 gap: var(--inner_gap_xxs);
 
+                margin-top: auto;
+
                 font-size: var(--font_size_l);
                 font-weight: 700;
 
