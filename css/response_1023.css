@@ -132,6 +132,27 @@
         }
 
 
+        .address
+        {
+            .icon
+            {
+                margin-inline: 2px;
+            }
+        }
+
+
+        .work_time
+        {
+            display: flex;
+
+
+            .icon
+            {
+                margin-right: 1px;
+            }
+        }
+
+
         .search
         {
             width: 100%;
@@ -237,5 +258,20 @@
                 }
             }
         }
+    }
+
+
+
+    /*-----------------
+        Sizes table
+    -----------------*/
+    .sizes_table
+    {
+        overflow-x: auto;
+        overflow-y: clip;
+
+        width: calc(100% + var(--inner_gap) * 2);
+        margin-inline: calc(var(--inner_gap) * -1);
+        padding-inline: var(--inner_gap);
     }
 }

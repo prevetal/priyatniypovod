@@ -191,6 +191,12 @@ document.addEventListener('DOMContentLoaded', function() {
 				nextEl: productImages.querySelector('.swiper-button-next'),
 				prevEl: productImages.querySelector('.swiper-button-prev')
 			},
+			pagination: {
+				el: productImages.querySelector('.swiper-pagination'),
+				type: 'bullets',
+				clickable: true,
+				bulletActiveClass: 'active'
+			},
 		})
 	}
 

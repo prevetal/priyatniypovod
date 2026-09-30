@@ -872,6 +872,42 @@ header
     }
 
 
+    .phone
+    {
+        display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: var(--inner_gap_xxxs);
+
+        font-size: 12px;
+
+
+        .icon
+        {
+            display: block;
+
+            width: 16px;
+
+            color: var(--primary_color);
+
+            aspect-ratio: 1 / 1;
+        }
+
+
+        a
+        {
+            align-self: center;
+
+            white-space: nowrap;
+            text-decoration: none;
+
+            color: currentColor;
+        }
+    }
+
+
     .mob_menu_btn
     {
         display: flex;
@@ -880,7 +916,7 @@ header
         flex-wrap: wrap;
         justify-content: center;
 
-        width: 44px;
+        width: 40px;
 
         border: 1px solid #b3b0ae;
         border-radius: var(--border_radius);
@@ -895,7 +931,7 @@ header
 
             display: block;
 
-            width: 22px;
+            width: 20px;
             height: 2px;
 
             background: currentColor;
@@ -1544,14 +1580,19 @@ aside
 
                 a
                 {
-                    display: block;
+                    display: -webkit-box;
+                    overflow: hidden;
+                    -webkit-box-orient: vertical;
 
                     width: fit-content;
 
                     transition: color .2s linear;
                     text-decoration: none;
+                    text-overflow: ellipsis;
 
                     color: currentColor;
+
+                    -webkit-line-clamp: 2;
                 }
             }
 
@@ -2530,7 +2571,7 @@ aside
             display: flex;
             align-content: center;
             align-items: center;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             justify-content: flex-start;
             gap: 10px;
 
@@ -2562,15 +2603,19 @@ aside
                 text-decoration-line: line-through;
             }
 
+
             .discount
             {
                 position: relative;
 
-                padding-block: 1px;
+                padding-block: var(--inner_gap_xxxs);
                 padding-inline: 23px 5px;
 
                 font-size: 12px;
                 font-weight: 700;
+                line-height: 1;
+
+                text-align: center;
 
                 background: #f8d4b5;
 

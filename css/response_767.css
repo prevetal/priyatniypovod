@@ -146,13 +146,27 @@
             {
                 display: none;
             }
+
+
+            .big
+            {
+                overflow: visible;
+
+
+                .swiper
+                {
+                    overflow: visible;
+
+                    --spaceBetween: var(--inner_gap_xxs);
+                }
+            }
         }
 
 
         .data
         {
             width: 100%;
-            margin-top: var(--inner_gap_l);
+            margin-top: var(--block_padding);
 
 
             .price
